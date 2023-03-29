@@ -1,45 +1,46 @@
 // color design tokens export
 export const tokensDark = {
-grey: {
+  grey: {
     0: "#ffffff", // manually adjusted
     10: "#f6f6f6", // manually adjusted
     50: "#f0f0f0", // manually adjusted
-    100: "#e5e8e8",
-    200: "#ccd1d1",
-    300: "#b2babb",
-    400: "#99a3a4",
-    500: "#7f8c8d",
-    600: "#667071",
-    700: "#4c5455",
-    800: "#333838",
-    900: "#191c1c",
+    100: "#d1d4dd",
+    200: "#a3aabb",
+    300: "#757f9a",
+    400: "#475578",
+    500: "#192a56",
+    600: "#142245",
+    700: "#0f1934",
+    800: "#0a1122",
+    900: "#050811",
     1000: "#000000", // manually adjusted
-},
-primary: {
+  },
+  primary: {
     //blue
-    100: "#d4e6f1",
-    200: "#a9cce3",
-    300: "#7fb3d5",
-    400: "#5499c7",
-    500: "#2980b9",
-    600: "#216694",
-    700: "#194d6f",
-    800: "#10334a",
-    900: "#081a25"
-},
-yellow: {
-    50: "#f1c40f",
-    100: "#fdebd0",
-    200: "#fad7a0",
-    300: "#f8c471",
-    400: "#f5b041",
-    500: "#f39c12",
-    600: "#c27d0e",
-    700: "#925e0b",
-    800: "#613e07",
-    900: "#311f04"
-},
-  };
+    100: "#d4d8e3",
+    200: "#a9b1c8",
+    300: "#7d8aac",
+    400: "#526391",
+    500: "#273c75",
+    600: "#1f305e",
+    700: "#172446",
+    800: "#10182f",
+    900: "#080c17",
+  },
+  secondary: {
+    //orange
+        0: "#ffffff",
+        100: "#f3d7d0",
+        200: "#e7afa2",
+        300: "#da8673",
+        400: "#ce5e45",
+        500: "#c23616",
+        600: "#9b2b12",
+        700: "#74200d",
+        800: "#4e1609",
+        900: "#270b04"
+  },
+};
   
   // function that reverses the color palette
   function reverseTokens(tokensDark) {
@@ -71,9 +72,9 @@ yellow: {
                 main: tokensDark.primary[400],
                 light: tokensDark.primary[400],
               },
-              yellow: {
-                ...tokensDark.yellow,
-                main: tokensDark.yellow[300],
+              secondary: {
+                ...tokensDark.secondary,
+                main: tokensDark.secondary[300],
               },
               neutral: {
                 ...tokensDark.grey,
@@ -91,10 +92,10 @@ yellow: {
                 main: tokensDark.grey[50],
                 light: tokensDark.grey[100],
               },
-              yellow: {
-                ...tokensLight.yellow,
-                main: tokensDark.yellow[600],
-                light: tokensDark.yellow[700],
+              secondary: {
+                ...tokensLight.secondary,
+                main: tokensDark.secondary[600],
+                light: tokensDark.secondary[700],
               },
               neutral: {
                 ...tokensLight.grey,
